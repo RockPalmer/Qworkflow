@@ -1,0 +1,118 @@
+@font-face {
+    font-family: harlow-solid-italic;
+    src: url(HARLOWSI.TTF);
+    font-weight: 100;
+}
+@font-face {
+    font-family: cooper-black;
+    src: url(COOPBL.TTF);
+    font-weight: 100;
+}
+.menuBar {
+    float: left;
+    padding-bottom: 500px;
+    font-family: cooper-black;
+    background-color: #4766ff;
+}
+.menuBar table {
+    border-collapse: collapse;
+    color: white;
+    font-size: 25px;
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.menuButton {
+    padding: 10px;
+}
+.menuButton * {
+    pointer-events: none;
+}
+.menuButton img {
+    height: 20px;
+    width: 20px;
+    padding-right: 10px;
+}
+.menuButton:hover, .menuButton[data-selected="1"] {
+    background-color: #1c42ff;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+.topBar {
+    box-shadow: 5px 5px 2px #b3b3b3;
+    padding: 10px;
+}
+.topArea {
+    font-family: cooper-black;
+    color: #3355ff;
+    display: flex;
+    font-size: 25px;
+}
+.card {
+    box-shadow: 5px 5px 2px #b3b3b3;
+    padding: 10px;
+    display: flex;
+}
+.topArea div div img {
+    height: 20px;
+    width: 20px;
+    padding-right: 5px;
+    padding-left: 10px;
+}
+.topArea div img {
+    height: 20px;
+    width: 20px;
+    padding-right: 5px;
+    padding-left: 10px;
+}
+.logo {
+    font-family: harlow-solid-italic;
+    color: #3355ff;
+    font-size: 25px;
+    padding-right: 7px;
+    padding-top: 7px;
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.searchArea {
+    display: flex;
+    text-align: center;
+}
+.topButton, .searchButton {
+    padding-right: 7px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: 1px solid white;
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.topButton:hover, .searchButton[data-selected="0"]:hover {
+    border: 1px solid #adadad;
+}
+.searchButton[data-selected="1"]:hover {
+    border-top: 1px solid #adadad;
+    border-right: 1px solid #adadad;
+    border-left: 1px solid #adadad;
+    border-radius: 10px 0px 0px 0px;
+}
+.searchButton {
+    flex: 1;
+}
+.topButton *, .searchButton * {
+    pointer-events: none;
+}
+.textBox {
+    font-family: 'Trebuchet MS', sans-serif;
+    padding-left: 10px;
+    display: flex;
+}
