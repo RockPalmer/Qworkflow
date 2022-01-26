@@ -1,0 +1,9 @@
+{
+    "cover": "business2.png",
+    "title": "Business #2",
+    "type": "construction",
+    "price": 10,
+    "description": "The second business in your area",
+    "rating": 5,
+    "range": 20
+}
