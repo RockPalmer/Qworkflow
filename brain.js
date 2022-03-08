@@ -1,15 +1,18 @@
-let optionSelected = "Home";
-let filterSelected = null;
-let sorterSelected = null;
+let optionSelected = "Home"; // Currently selected tab
+let filterSelected = null; // Currently selected filter
+let sorterSelected = null; // Currently selected sorting method
+/* List of all sorting methods */
 const sorters = [
     'A-Z',
     'Z-A'
 ];
+/* List of all filters */
 const filters = [
     '10 miles',
     '20 miles',
     '30 miles'
 ];
+/* List of all menu tabs */
 const menuOptions = [
     ["icons8-male-user-32.png","Profile"],
     ["icons8-home-50.png","Home"],
@@ -17,6 +20,7 @@ const menuOptions = [
     ["icons8-no-comments-50.png","Messages"],
     ["icons8-settings-32.png","Settings"]
 ];
+/* When menu tab is selected */
 function onMenuSelect() {
     let menuButtons = document.getElementsByClassName("menuButton");
     let x = 0;
@@ -27,10 +31,12 @@ function onMenuSelect() {
     event.target.setAttribute("data-selected","1");
     optionSelected = event.target.id;
 }
+/* When Listings tab is selected */
 function selectListings() {
     let mainBody = document.getElementById("mainBody");
-
+    //UNFINISHED
 }
+/* Opens and closes the menu bar */
 function toggleMenuBar() {
     let selected = event.target.getAttribute("data-selected");
     let menuBar = document.getElementsByClassName("menuBar")[0];
@@ -66,6 +72,7 @@ function toggleMenuBar() {
         }
     }
 }
+/* Build card for a give search result */
 function buildSearchResult(result) {
     let coverPhoto = document.createElement("img");
     coverPhoto.src = result.cover;
@@ -77,6 +84,7 @@ function buildSearchResult(result) {
     searchResult.appendChild(title);
     return searchResult;
 }
+/* Opens sorting options tab */
 function openSortOptions() {
     // Sort button
     let sortbtn = event.target;
@@ -171,6 +179,7 @@ function openSortOptions() {
         sortbtn.setAttribute("data-selected","1");
     }
 }
+/* Opens and closes filter options tab */
 function openFilterOptions() {
     // "Filter" button
     let filterbtn = event.target;
@@ -278,6 +287,8 @@ function openFilterOptions() {
         filterbtn.setAttribute("data-selected","1");
     }
 }
+/* execute search with specified filters */
+//UNFINISHED
 function searchProtocol() {
     let newText = '';
     let mainBodyLabel = document.getElementById('mainBodyLabel');
