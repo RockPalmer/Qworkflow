@@ -148,3 +148,10 @@ body {
     border-bottom: 5px solid #cfcfcf;
     flex: 1;
 }
+.sign-in-module {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ababab;
+    border-radius: 7px;
+}
